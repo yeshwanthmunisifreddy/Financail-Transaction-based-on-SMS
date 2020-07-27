@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Enter Tag"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Enter Tag"
+            android:inputType="textCapSentences"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="15dp"
+            android:textSize="12sp"
+            app:drawableTint="#666666" />
+        <!--android:drawableEnd="@drawable/ic_right_arrow"-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/btCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="15dp"
+            android:text="Cancel"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/btSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="15dp"
+            android:text="Add Tag"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
